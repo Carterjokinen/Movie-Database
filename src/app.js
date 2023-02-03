@@ -4,7 +4,14 @@ const app = express();
 
 const cors = require("cors");
 
+const errorHandler = require("./errors/errorHandler");
+const notFound = require("./errors/notFound");
+
 app.use(cors());
 app.use(express.json());
+
+//----Error handlers----//
+app.use(notFound);
+app.use(errorHandler);
 
 module.exports = app;
