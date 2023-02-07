@@ -4,9 +4,11 @@ const app = express();
 
 const cors = require("cors");
 
+const moviesRouter = require("./movies/movies.router");
+const reviewsRouter = require("./reviews/reviews.router");
+const theatersRouter = require("./theaters/theaters.router");
 const errorHandler = require("./errors/errorHandler");
 const notFound = require("./errors/notFound");
-
 app.use(cors());
 app.use(express.json());
 
