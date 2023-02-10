@@ -69,4 +69,4 @@ The following routes and methods are available:
 1. Run `npm install`
 2. Copy `.env.sample` and add db urls to `.env`
 3. Initialize and run seed files with `npx knex seed:run`
-3. Run `npm run start:dev`
+4. Run `npm start`
